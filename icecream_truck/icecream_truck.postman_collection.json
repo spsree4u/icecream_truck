@@ -1,0 +1,159 @@
+{
+	"info": {
+		"_postman_id": "bb656919-b655-48d8-893c-264ed98d50f1",
+		"name": "Others",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Buy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"item\":\"Ice cream\",\n\t\"flavour\": \"Chocolate\",\n\t\"truck_id\": 1,\n\t\"quantity\": 5\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8300/ice_cream_truck/buy/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8300",
+					"path": [
+						"ice_cream_truck",
+						"buy",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Inventory",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8300/ice_cream_truck/inventory?truck_id=1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8300",
+					"path": [
+						"ice_cream_truck",
+						"inventory"
+					],
+					"query": [
+						{
+							"key": "truck_id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Inventory All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8300/ice_cream_truck/inventory/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8300",
+					"path": [
+						"ice_cream_truck",
+						"inventory",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Items",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8300/ice_cream_truck/items",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8300",
+					"path": [
+						"ice_cream_truck",
+						"items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Trucks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8300/ice_cream_truck/trucks",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8300",
+					"path": [
+						"ice_cream_truck",
+						"trucks"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
